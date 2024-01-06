@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header .publishNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 129px;
+  width: 100%;
+  border-bottom: 1px solid #f1f1f1;
+}
+header .publishNav .socialMedia {
+  min-height: 129px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .publishNav .socialMedia i {
+  border: 1px solid #f1f1f1;
+  border-radius: 50%;
+  font-size: 17px;
+  width: 10%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4d4d4d;
+  transition: 0.4s;
+  cursor: pointer;
+}
+header .publishNav .socialMedia i:hover {
+  border: none;
+  background-color: #95adbe;
+  color: #ffffff;
+}
+header .publishNav .publishCompanyLogo {
+  min-height: 129px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .publishNav .publishCompanyLogo h2 {
+  font-family: Lora, serif;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 26px;
+}
+header .publishNav .publishCompanyLogo h2 span {
+  color: #ff7a5c;
+  font-family: Lora, serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+header .publishNav .publishCompanyLogo p {
+  font-family: Lora, serif;
+  font-size: 13px;
+  font-weight: 500px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+header .publishNav .search {
+  min-height: 129px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header .publishNav .search .searchInp {
+  min-height: 52px;
+  min-width: 300px;
+  border-radius: 30px;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .publishNav .search .searchInp #searchInp {
+  width: 80%;
+  min-height: 40px;
+  border: transparent;
+  background-color: transparent;
+  margin-left: 10px;
+}
+header .publishNav .search .searchInp #searchInp::placeholder {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+header .publishNav .search .searchInp #searchBtn {
+  background-color: #95adbe;
+  border-top-right-radius: 30px;
+  width: 20%;
+  min-height: 52px;
+  border: none;
+  color: #fff;
+  border-bottom-right-radius: 30px;
+}
+header .navBar {
+  width: 100%;
+  min-height: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .navBar .navbarCnt {
+  width: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .navBar .navbarCnt .navUl {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navBar .navbarCnt .navUl li a {
+  font-family: Lora, serif;
+  font-size: 13px;
+  color: #000000;
+  font-weight: 500;
+  transition: 0.4s;
+}
+header .navBar .navbarCnt .navUl li a:hover {
+  color: #95adbe;
+}
+
+main #cartAll {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #cartAll #cartProducts {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main #cartAll #cartProducts .box {
+  width: 33%;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main #cartAll #cartProducts .box img {
+  width: 65%;
+}
+main #cartAll #cartProducts .box p {
+  color: #141517;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: poppins;
+}
+main #cartAll #cartProducts .box button {
+  background-color: #141517;
+  font-size: 14px;
+  line-height: 57px;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  transition: 0.5s ease;
+  width: 40%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #cartAll #cartProducts .box button:hover {
+  background-color: transparent;
+  color: #141517;
+  border: 1px solid #141517;
+}
+
+footer {
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  background-color: #000000;
+  align-items: center;
+  justify-content: center;
+}
+footer .footerTxt {
+  min-height: 125px;
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+}
+footer .footerTxt span {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .footerTxt span span {
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+footer .footerTxt span span:hover {
+  color: #95adbe;
+}

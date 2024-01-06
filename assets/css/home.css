@@ -1,0 +1,750 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header .publishNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 129px;
+  width: 100%;
+  border-bottom: 1px solid #f1f1f1;
+}
+header .publishNav .socialMedia {
+  min-height: 129px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .publishNav .socialMedia i {
+  border: 1px solid #f1f1f1;
+  border-radius: 50%;
+  font-size: 17px;
+  width: 10%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4d4d4d;
+  transition: 0.4s;
+  cursor: pointer;
+}
+header .publishNav .socialMedia i:hover {
+  border: none;
+  background-color: #95adbe;
+  color: #ffffff;
+}
+header .publishNav .publishCompanyLogo {
+  min-height: 129px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .publishNav .publishCompanyLogo h2 {
+  font-family: Lora, serif;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 26px;
+}
+header .publishNav .publishCompanyLogo h2 span {
+  color: #ff7a5c;
+  font-family: Lora, serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+header .publishNav .publishCompanyLogo p {
+  font-family: Lora, serif;
+  font-size: 13px;
+  font-weight: 500px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+header .publishNav .search {
+  min-height: 129px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header .publishNav .search .searchInp {
+  min-height: 52px;
+  min-width: 300px;
+  border-radius: 30px;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .publishNav .search .searchInp #searchInp {
+  width: 80%;
+  min-height: 40px;
+  border: transparent;
+  background-color: transparent;
+  margin-left: 10px;
+}
+header .publishNav .search .searchInp #searchInp::placeholder {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+header .publishNav .search .searchInp #searchBtn {
+  background-color: #95adbe;
+  border-top-right-radius: 30px;
+  width: 20%;
+  min-height: 52px;
+  border: none;
+  color: #fff;
+  border-bottom-right-radius: 30px;
+}
+header .navBar {
+  width: 100%;
+  min-height: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .navBar .navbarCnt {
+  width: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .navBar .navbarCnt .navUl {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navBar .navbarCnt .navUl li a {
+  font-family: Lora, serif;
+  font-size: 13px;
+  color: #000000;
+  font-weight: 500;
+  transition: 0.4s;
+}
+header .navBar .navbarCnt .navUl li a:hover {
+  color: #95adbe;
+}
+
+#goodBooks {
+  min-height: 700px;
+  width: 100%;
+  background-image: url(/assets/images/bg_1.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#goodBooks .goodBooksTxt {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#goodBooks .goodBooksTxt h2 {
+  font-family: Lora, serif;
+  font-size: 60px;
+  color: #000000;
+  font-weight: 500;
+  width: 55%;
+  position: relative;
+}
+#goodBooks .goodBooksTxt p {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 27px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+#goodBooks .goodBooksTxt div {
+  display: flex;
+  gap: 5px;
+}
+#goodBooks .goodBooksTxt div .view {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 27px;
+  font-weight: 500;
+  min-width: 150px;
+  min-height: 57px;
+  border: none;
+  border-radius: 5px;
+  background-color: #95adbe;
+}
+#goodBooks .goodBooksTxt div .explore {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 15px;
+  color: #111;
+  line-height: 27px;
+  font-weight: 700;
+  min-width: 150px;
+  min-height: 57px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+}
+#goodBooks .all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#goodBooks .all .booksTxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: -435px;
+  width: 20%;
+}
+#goodBooks .all .booksTxt i {
+  width: 170px;
+  min-height: 170px;
+  border-radius: 50%;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4f0;
+}
+#goodBooks .all .booksTxt i:hover {
+  background-color: #95adbe;
+  transition: 0.5s;
+}
+#goodBooks .all .booksTxt h2 {
+  font-family: Lora, serif;
+  font-size: 24px;
+  color: #000000;
+  font-weight: 600;
+  line-height: 36px;
+  min-height: 40px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+#goodBooks .all .booksTxt p {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 17px;
+  color: #111111;
+  line-height: 31px;
+  font-weight: 400;
+  color: #808080;
+  text-align: center;
+}
+
+#newRelease {
+  min-height: 1203px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#newRelease .newReleaseTxt {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  min-height: 400px;
+  width: 100%;
+}
+#newRelease .newReleaseTxt span {
+  color: #ff7a5c;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 31px;
+  font-weight: 600;
+}
+#newRelease .newReleaseTxt h2 {
+  font-family: Lora, serif;
+  font-size: 50px;
+  color: #000000;
+  font-weight: 500;
+  line-height: 75px;
+}
+#newRelease #homeProdCnts {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#newRelease #homeProdCnts .miniDiv {
+  width: 33%;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#newRelease #homeProdCnts .miniDiv img {
+  width: 95%;
+}
+#newRelease #homeProdCnts .miniDiv h2 {
+  color: #141517;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: poppins;
+}
+#newRelease #homeProdCnts .miniDiv button {
+  background-color: #141517;
+  font-size: 14px;
+  line-height: 57px;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  transition: 0.5s;
+  width: 25%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#newRelease #homeProdCnts .miniDiv button:hover {
+  background-color: transparent;
+  color: #141517;
+  border: 1px solid #141517;
+}
+#newRelease .loadMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+}
+#newRelease .loadMore #loadMore {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 27px;
+  font-weight: 500;
+  min-width: 180px;
+  min-height: 57px;
+  border: none;
+  border-radius: 5px;
+  background-color: #95adbe;
+}
+
+#kindWorld {
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/assets/images/bg_4.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#kindWorld .kindWorldTxt {
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#kindWorld .kindWorldTxt span {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 500;
+}
+#kindWorld .kindWorldTxt h2 {
+  font-family: Lora, serif;
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 75px;
+}
+#kindWorld .marketingManagerTxt {
+  background-color: #ffffff;
+  border-radius: 10px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 300px;
+  width: 25%;
+  background-color: #ffffff;
+}
+#kindWorld .marketingManagerTxt .far {
+  width: 95%;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 31px;
+  font-weight: 500;
+  min-height: 100px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  color: #808080;
+}
+#kindWorld .marketingManagerTxt .rogerScott {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#kindWorld .marketingManagerTxt .rogerScott img {
+  border-radius: 50%;
+  height: 80px;
+  min-width: 80px;
+}
+#kindWorld .marketingManagerTxt .rogerScott h2 {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #000000;
+}
+#kindWorld .marketingManagerTxt .rogerScott .manager {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+#recentBlog {
+  width: 100%;
+  min-height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#recentBlog .recentBlogTxt {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+#recentBlog .recentBlogTxt span {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 31px;
+  font-weight: 600;
+  color: #ff7a5c;
+}
+#recentBlog .recentBlogTxt h2 {
+  font-family: Lora, serif;
+  font-size: 50px;
+  color: #4c4c4c;
+  font-weight: 500;
+  line-height: 75px;
+  min-height: 100px;
+}
+#recentBlog .newFriends {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+#recentBlog .newFriends img {
+  width: 100%;
+}
+#recentBlog .newFriends .friendsTxt {
+  font-family: Lora, serif;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+  line-height: 30px;
+  min-height: 100px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+#recentBlog .newFriends p {
+  text-align: center;
+  width: 80%;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 17px;
+  color: #111111;
+  line-height: 31px;
+  font-weight: 400;
+  color: #808080;
+}
+#recentBlog .newFriends .month {
+  background-color: #efefef;
+  height: 100px;
+  min-width: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 168px;
+}
+#recentBlog .newFriends .month h1 {
+  font-family: Lora, serif;
+  font-size: 30px;
+  color: #95adbe;
+  font-weight: 700;
+}
+#recentBlog .newFriends .month h2 {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+#recentBlog .newFriends .month span {
+  color: rgba(0, 0, 0, 0.2);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+}
+#recentBlog .newFriends .month:hover {
+  background-color: #95adbe;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#recentBlog .newFriends .month:hover h1 {
+  color: #fff;
+}
+
+footer {
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  background-color: #000000;
+  align-items: center;
+  justify-content: center;
+}
+footer .footerTxt {
+  min-height: 125px;
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+}
+footer .footerTxt span {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .footerTxt span span {
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+footer .footerTxt span span:hover {
+  color: #95adbe;
+}
+
+@media screen and (max-width: 991px) {
+  #kindWorld {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #kindWorld .marketingManagerTxt {
+    width: 30%;
+  }
+  #kindWorld .marketingManagerTxt .far {
+    font-size: 12px;
+  }
+  #kindWorld .marketingManagerTxt .rogerScott div h2 {
+    font-size: 15px;
+  }
+  #kindWorld .marketingManagerTxt .rogerScott div .manager {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #kindWorld {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #kindWorld .kindWorld .kindWorldTxt h2 {
+    font-size: 30px;
+  }
+  #kindWorld .kindWorld .marketingManagerTxt {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #kindWorld .kindWorld .marketingManagerTxt .far {
+    font-size: 12px;
+  }
+  #kindWorld .kindWorld .marketingManagerTxt .rogerScott div h2 {
+    font-size: 15px;
+  }
+  #kindWorld .kindWorld .marketingManagerTxt .rogerScott div .manager {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 552px) {
+  #kindWorld {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #kindWorld .kindWorld .kindWorldTxt h2 {
+    font-size: 20px;
+  }
+  #kindWorld .kindWorld .marketingManagerTxt {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #recentBlog .newFriend .month {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #newRelease .newReleaseTxt {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  #newRelease {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  #newRelease #productsAll {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #newRelease #productsAll .miniDiv {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #newRelease #productsAll .miniDiv img {
+    width: 60%;
+  }
+  #newRelease #productsAll .miniDiv button {
+    font-size: 12px;
+    width: 20px;
+    color: white;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #goodBooks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #95adbe;
+    position: relative;
+  }
+  #goodBooks .goodBooksTxt h2 {
+    font-size: 50px;
+  }
+  #goodBooks .children .booksTxt {
+    top: 360px;
+  }
+  #goodBooks .children .booksTxt h2 {
+    font-size: 20px;
+  }
+  #goodBooks .children .booksTxt p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1496px) {
+  #goodBooks .goodBooksTxt h2 {
+    font-size: 45px;
+  }
+  #goodBooks .children .booksTxt {
+    bottom: -490px;
+  }
+  #goodBooks .children .booksTxt h2 {
+    font-size: 20px;
+  }
+  #goodBooks .children .booksTxt p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1064px) {
+  #goodBooks .goodBooksTxt h2 {
+    font-size: 45px;
+  }
+  #goodBooks .children .booksTxt h2 {
+    font-size: 20px;
+  }
+  #goodBooks .children .booksTxt p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #goodBooks .goodBooksTxt h2 {
+    font-size: 40px;
+  }
+  #goodBooks .goodBooksTxt p {
+    font-size: 12px;
+  }
+  #goodBooks .children .booksTxt {
+    bottom: -670px;
+  }
+  #goodBooks .children .booksTxt i {
+    font-size: 40px;
+    width: 150px;
+    min-height: 150px;
+  }
+  #goodBooks .children .booksTxt h2 {
+    font-size: 16px;
+  }
+  #goodBooks .children .booksTxt p {
+    font-size: 10px;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 968px) {
+  #goodBooks .children .booksTxt i {
+    font-size: 20px;
+    width: 100px;
+    min-height: 100px;
+  }
+}
+@media screen and (max-width: 448px) {
+  #goodBooks .goodBooksTxt h2 {
+    font-size: 20px;
+  }
+  #goodBooks .goodBooksTxt p {
+    font-size: 12px;
+  }
+  #goodBooks .children .booksTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+  }
+  #goodBooks .children .booksTxt i {
+    font-size: 15px;
+    width: 70px;
+    min-height: 70px;
+  }
+}
